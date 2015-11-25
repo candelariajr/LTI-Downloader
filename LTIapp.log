@@ -1457,3 +1457,30 @@ Connection Successful!
 Server filename is: 1070
 Config filename should be: 1069
 Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-25 12:46:25
+Attempting to connect to ftp.librarytech.com...
+Connected but unable to authenticate. Check user/pw config
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-25 12:47:51
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Config filename should be: 1069
+Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-25 13:09:32
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Config filename should be: 1069
+Config filename is: 1069
