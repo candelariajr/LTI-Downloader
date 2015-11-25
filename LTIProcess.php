@@ -207,21 +207,16 @@ function getServerFileName($conn)
     {
         //echo "<li>".$files[$i]."<br>".substr($files[$i],4, -4 )."</li>";
         //echo "<li>".substr($files[$i],5,-4)."</li>";
-        if(sizeof($files[$i])==13)
         $fileNameString = substr($files[$i],5,-4);
-        echo "fileNameString".$fileNameString."<br>";
         if(intval($fileNameString) > intval($fileBuffer))
         {
             $fileBufferLow = intval($fileBuffer);
             $fileBuffer = intval($fileNameString);
         }
-        else if(intval($fileNameString) > intval($fileBufferLow))
+        else if(intval($fileNameString) > intval($fileBufferLow) && intval($fileNameString) != $fileBuffer)
         {
             $fileBufferLow = intval($fileNameString);
         }
-        echo"FileBufferLow".$fileBufferLow."<br>";
-        echo"FileBuffer".$fileBuffer."<br>";
-        echo"<br>";
     }
     if(!$files)
     {
