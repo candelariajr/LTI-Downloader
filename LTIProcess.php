@@ -202,31 +202,44 @@ function getServerFileName($conn)
     ftp_pasv($conn, true);
     $files = ftp_nlist($conn, ".");
     $fileBuffer = 0;
+    $fileBufferLow = 0;
     for($i = 0; $i < count($files); $i++)
     {
         //echo "<li>".$files[$i]."<br>".substr($files[$i],4, -4 )."</li>";
         //echo "<li>".substr($files[$i],5,-4)."</li>";
+        if(sizeof($files[$i])==13)
         $fileNameString = substr($files[$i],5,-4);
-        if(intval($fileNameString) > $fileBuffer)
+        echo "fileNameString".$fileNameString."<br>";
+        if(intval($fileNameString) > intval($fileBuffer))
         {
+            $fileBufferLow = intval($fileBuffer);
             $fileBuffer = intval($fileNameString);
         }
+        else if(intval($fileNameString) > intval($fileBufferLow))
+        {
+            $fileBufferLow = intval($fileNameString);
+        }
+        echo"FileBufferLow".$fileBufferLow."<br>";
+        echo"FileBuffer".$fileBuffer."<br>";
+        echo"<br>";
     }
     if(!$files)
     {
         appendLogFile("Connected to FTP server and detected no files! Check network connection and status of FTP directory!");
     }
-    return intval($fileBuffer);
+    $fileBufferArray = [intval($fileBuffer), intval($fileBufferLow)];
+    return $fileBufferArray;
 }
 
 function download_begin($conn, $fileName)
 {
     //The moment we've all been waiting for.
-    $serverFileName = getServerFileName($conn);
-    appendLogFile("Server filename is: ".$serverFileName);
-    appendLogFile("Config filename should be: ".($serverFileName - 1));
+    $serverFileArray = getServerFileName($conn);
+    appendLogFile("Server filename is: ".$serverFileArray[0]);
+    appendLogFile("Last filename is: ".$serverFileArray[1]);
+    appendLogFile("Config filename should be: ".($serverFileArray[0] - 1));
     appendLogFile("Config filename is: ".$fileName);
-    if($fileName != $serverFileName - 1)
+    if($fileName != $serverFileArray[0] - 1)
     {
         appendLogFile("Consider running process manually. User input will be gathered in the next version to help handle this programmatically!");
         //insert function calls here yada yada ya - resync options
