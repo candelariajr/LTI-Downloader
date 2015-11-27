@@ -1,6 +1,6 @@
 <?php
 /**
- * Version 0.3a
+ * Version 0.3b
  * Created by PhpStorm.
  * User: candelariajr
  * Date: 11/19/2015
@@ -96,6 +96,7 @@ function createCrashFile($crashCode)
     fclose($crashFile);
 }
 
+//start the application processes, called when no early crash detected.
 function runApplication()
 {
     openLogFile();
@@ -125,7 +126,7 @@ function openLogFile()
         $logContents = file_get_contents($logName);
     }
     $logContents.= PHP_EOL."----------------------------------------------------------------------------------------------".PHP_EOL;
-    $logContents.= "Log Entry Started for App Version 0.2c.1".PHP_EOL;
+    $logContents.= "Log Entry Started for App Version 0.3.b".PHP_EOL;
     if($httpRunState)
     {
         $logContents.="Process was started from HTTP Request".PHP_EOL;
@@ -152,7 +153,10 @@ function appendLogFile($appendedString)
     echo($appendedString.EOL());
 }
 
-//function to connect to FTP server
+//function to connect to FTP server. Called by runApplication()
+//generates the conn object
+//grabs the file name by calling determineFileName
+//subsequent argument is fed to download_begin()
 function connectToFTP()
 {
     global $configurationArray;
@@ -181,7 +185,8 @@ function connectToFTP()
     }
 }
 
-
+//returns what we think the file number on the server should be
+//this is called by connectToFTP() as it tries to
 function determineFileName()
 {
     //I know this looks stupid, but it really checks to see if the file "name"
@@ -197,6 +202,8 @@ function determineFileName()
     return intval($fileName);
 }
 
+//returns an array
+//[numerical component of current server file, numerical component of 2nd most recent server file]
 function getServerFileName($conn)
 {
     ftp_pasv($conn, true);
@@ -226,25 +233,33 @@ function getServerFileName($conn)
     return $fileBufferArray;
 }
 
+//takes the passed $conn object and the current file name
 function download_begin($conn, $fileName)
 {
     //The moment we've all been waiting for.
     $serverFileArray = getServerFileName($conn);
     appendLogFile("Server filename is: ".$serverFileArray[0]);
     appendLogFile("Last filename is: ".$serverFileArray[1]);
-    appendLogFile("Config filename should be: ".($serverFileArray[0] - 1));
+    appendLogFile("Config filename should be: ".($serverFileArray[1]));
     appendLogFile("Config filename is: ".$fileName);
-    if($fileName != $serverFileArray[0] - 1)
+    if($fileName != $serverFileArray[1])
     {
         appendLogFile("Consider running process manually. User input will be gathered in the next version to help handle this programmatically!");
-        //insert function calls here yada yada ya - resync options
+        //call function to reconcile differences between client config and server files
+        //it will be a procedure at first, but will be more interactive in the HTTP run state and CLI
+        //instantiations.
+        reconcileDownload($fileName, $serverFileArray[1]);
+    }
+    else
+    {
+        transferFiles();
     }
 }
 
+//This makes an End of line output to the screen. It is dependant on the run state
+//I got sick of putting in these freaking characters, so I functionalized it.
 function EOL()
 {
-    //This makes an End of line output to the screen. It is dependant on the run state
-    //I got sick of putting in these freaking characters, so I functionalized it.
     global $httpRunState;
     if ($httpRunState)
     {
@@ -256,6 +271,9 @@ function EOL()
     }
 }
 
+//This grabs the user and password from locally stored INI.
+//The best way for encrypting locally stored data would be using a REST API.
+//This is a feature that can be explored later on, but not impertinent at this time.
 function getConnectionParamsFromINI()
 {
     //Do NOT put passwords on GIT!
@@ -263,4 +281,14 @@ function getConnectionParamsFromINI()
     $ini = parse_ini_file($ini_filename, true);
     $returnParams = [$ini['global']['ftpUser'], $ini['global']['ftpPW']];
     return $returnParams;
+}
+
+function transferFiles()
+{
+
+}
+
+function reconcileDownload($localName, $serverName)
+{
+
 }

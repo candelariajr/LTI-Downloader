@@ -65,3 +65,75 @@ Server filename is: 1070
 Last filename is: 1069
 Config filename should be: 1069
 Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 11:18:53
+Attempting to connect to ftp.librarytech.com...
+Connected but unable to authenticate. Check user/pw config
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 12:02:19
+Attempting to connect to ftp.librarytech.com...
+Connected but unable to authenticate. Check user/pw config
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 16:15:30
+Attempting to connect to ftp.librarytech.com...
+Connected but unable to authenticate. Check user/pw config
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 16:17:08
+Attempting to connect to ftp.librarytech.com...
+Connected but unable to authenticate. Check user/pw config
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 16:17:28
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Last filename is: 1069
+Config filename should be: 1069
+Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 16:17:56
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Last filename is: 1069
+Config filename should be: 1069
+Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 16:28:34
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Last filename is: 1069
+Config filename should be: 1069
+Config filename is: 1069
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.2c.1
+Process was started from HTTP Request
+Current time and date is: 2015-11-27 17:10:13
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1070
+Last filename is: 1069
+Config filename should be: 1069
+Config filename is: 1069
