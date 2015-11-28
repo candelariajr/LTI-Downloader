@@ -248,11 +248,11 @@ function download_begin($conn, $fileName)
         //call function to reconcile differences between client config and server files
         //it will be a procedure at first, but will be more interactive in the HTTP run state and CLI
         //instantiations.
-        reconcileDownload($fileName, $serverFileArray[1]);
+        reconcileDownload($conn, $fileName, $serverFileArray[1]);
     }
     else
     {
-        transferFiles();
+        transferFiles($conn, $serverFileArray[0]);
     }
 }
 
@@ -283,12 +283,39 @@ function getConnectionParamsFromINI()
     return $returnParams;
 }
 
-function transferFiles()
+//If everything is normal, then this will run, and download the proper files accordingly.
+function transferFiles($conn, $serverName)
+{
+    //WNCLN.$serverName.ACF
+    //WNCLN.$serverName.ULH
+    $acfString = "WNCLN".$serverName.".ACF";
+    $ulhString = "WNCLN".$serverName.".ULH";
+    if(ftp_get($conn, "download\\".$acfString, $acfString, FTP_ASCII))
+    {
+        appendLogFile($acfString." has been downloaded successfully!");
+    }
+    else
+    {
+        appendLogFile($acfString." failed to download!");
+    }
+    if(ftp_get($conn, "download\\".$ulhString, $acfString, FTP_ASCII))
+    {
+        appendLogFile($ulhString." has been downloaded successfully!");
+    }
+    else
+    {
+        appendLogFile($ulhString." failed to download!");
+    }
+}
+
+function reconcileDownload($conn, $localName, $serverName)
+{
+
+
+}
+
+function writeConfigUpdate($serverName)
 {
 
 }
 
-function reconcileDownload($localName, $serverName)
-{
-
-}
