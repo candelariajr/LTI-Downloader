@@ -39,6 +39,19 @@
 date_default_timezone_set('EST');
 //are you the web server?
 $httpRunState = false;
+//declare emailString
+
+
+//setting up email config.
+//There is not much to commit here. It's about 90% server-side config/setup
+//This is for testing
+$emailStr = "<div style='font-family: arial, verdana, sans-serif'>This is an email!";
+$emailStr.= date("Y-m-d H:i:s")."</div>";
+$headers = 'From: candelariajr@appstate.edu' . "\r\n" .
+    'Reply-To: candelariajr@appstate.edu' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+mail("candelariajr@appstate.edu", "MailfromPHP!", $emailStr, $headers);
+
 
 //EOL is an end of line function that manages the CLI and HTTP output-
 if(!isset($_SERVER['argc']))
