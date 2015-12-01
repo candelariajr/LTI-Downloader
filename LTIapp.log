@@ -499,3 +499,31 @@ Last filename is: 1070
 Config filename should be: 1070
 Config filename is: 1069
 Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-01 15:11:57
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1071
+Last filename is: 1070
+Config filename should be: 1070
+Config filename is: 1069
+reconciling download...
+Process was last run successfully on: 1
+
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-01 17:22:13
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1071
+Last filename is: 1070
+Config filename should be: 1070
+Config filename is: 1070
+WNCLN1071.ACF has been downloaded successfully!
+WNCLN1071.ULH has been downloaded successfully!
+Config file updated

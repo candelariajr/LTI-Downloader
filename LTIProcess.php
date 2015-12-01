@@ -122,7 +122,6 @@ function openLogFile()
     global $configurationArray;
     global $httpRunState;
     $logName = substr($configurationArray[2], 0 , -2); //remove the NL CR chars at the end of the line
-    //$logName = "LTIapp.log";
     //create the file if it's not there.
     if(!file_exists($logName))
     {
@@ -255,13 +254,16 @@ function download_begin($conn, $fileName)
     appendLogFile("Last filename is: ".$serverFileArray[1]);
     appendLogFile("Config filename should be: ".($serverFileArray[1]));
     appendLogFile("Config filename is: ".$fileName);
-    if($fileName != $serverFileArray[1])
+    if($fileName < $serverFileArray[1])
     {
-        appendLogFile("Consider running process manually. User input will be gathered in the next version to help handle this programmatically!");
         //call function to reconcile differences between client config and server files
         //it will be a procedure at first, but will be more interactive in the HTTP run state and CLI
         //instantiations.
         reconcileDownload($conn, $fileName, $serverFileArray[1]);
+    }
+    else if($fileName > $serverFileArray)
+    {
+        appendLogFile("Consider running process manually. Config Filename > Server Filename!");
     }
     else
     {
@@ -306,29 +308,77 @@ function transferFiles($conn, $serverName)
     if(ftp_get($conn, "download\\".$acfString, $acfString, FTP_ASCII))
     {
         appendLogFile($acfString." has been downloaded successfully!");
+        if(ftp_get($conn, "download\\".$ulhString, $acfString, FTP_ASCII))
+        {
+            appendLogFile($ulhString." has been downloaded successfully!");
+            //update the config file
+            writeConfigUpdate($serverName);
+        }
+        else
+        {
+            appendLogFile($ulhString." failed to download!");
+        }
     }
     else
     {
         appendLogFile($acfString." failed to download!");
     }
-    if(ftp_get($conn, "download\\".$ulhString, $acfString, FTP_ASCII))
-    {
-        appendLogFile($ulhString." has been downloaded successfully!");
-    }
-    else
-    {
-        appendLogFile($ulhString." failed to download!");
-    }
+
 }
 
+//called by download_begin
+//This guy is going to get a little (actually very) complicated
+//In this version, grab connection object, match recent server name against config name
+//This is a multipart function and will be modified with interactive php pages and text streams so that
+//during a manual re-run, a user can decide how to proceed if there is an issue. As far as the V1 map of this
+//goes, it will just download the files it doesn't detect in the download folder.
 function reconcileDownload($conn, $localName, $serverName)
 {
+    appendLogFile("reconciling download...");
+    $lastSuccessfulDate = getLastSuccess();
+    appendLogFile("The last file set successfully downloaded ".$lastSuccessfulDate);
+}
+
+//writes the new determined server name (the name of the files just now downloaded)
+//this is the same config file that is called upon when the application runs
+function writeConfigUpdate($serverName)
+{
+    global $configurationArray;
+    $configurationArray[1] = $serverName.substr($configurationArray[1], -2); //Keep the NL CR chars as they are
+    $fileContents = "";
+    for($i = 0; $i < sizeof($configurationArray); $i++)
+    {
+        $fileContents.= $configurationArray[$i];
+    }
+    file_put_contents("LTIconfig.cfg", $fileContents);
+    appendLogFile("Config file updated");
 
 
 }
 
-function writeConfigUpdate($serverName)
+//simply returns the number of the filename that was last downloaded successfully.
+//This is part of the reconcileDownload function.
+function getLastSuccess()
 {
+    //iterate through log file to allow us to get the name of the last successful download.
+    //the next section will go through the downloads folder itself (it'll be compared to this)
+    global $configurationArray;
+    $logName = substr($configurationArray[2], 0 , -2); //remove the NL CR chars at the end of the line
+    $logContents = file($logName);
+    $logEntryPlace = 0;
+    $lastSuccessfulLogEntryPlace = 0;
+    for($i = 1; $i < sizeof($logContents);$i ++)
+    {
+        if(substr($logContents[$i], 0 , -2) == "----------------------------------------------------------------------------------------------")
+        {
+            $logEntryPlace = $i;
+        }
+        if($i > $logEntryPlace && substr($logContents[$i],-35, -2) == "has been downloaded successfully!")
+        {
+            $lastSuccessfulLogEntryPlace = $logEntryPlace;
+        }
+    }
+    return substr($logContents[$lastSuccessfulLogEntryPlace + 6], -6, -2);
 
 }
 
