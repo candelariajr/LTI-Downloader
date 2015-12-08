@@ -1,6 +1,6 @@
 <?php
 /**
- * Version 0.3b
+ * Version 0.4a
  * Created by PhpStorm.
  * User: candelariajr
  * Date: 11/19/2015
@@ -40,17 +40,7 @@ date_default_timezone_set('EST');
 //are you the web server?
 $httpRunState = false;
 //declare emailString
-
-
-//setting up email config.
-//There is not much to commit here. It's about 90% server-side config/setup
-//This is for testing
-$emailStr = "<div style='font-family: arial, verdana, sans-serif'>This is an email!";
-$emailStr.= date("Y-m-d H:i:s")."</div>";
-$headers = 'From: candelariajr@appstate.edu' . "\r\n" .
-    'Reply-To: candelariajr@appstate.edu' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-mail("candelariajr@appstate.edu", "MailfromPHP!", $emailStr, $headers);
+$emailMid = "";
 
 
 //EOL is an end of line function that manages the CLI and HTTP output-
@@ -114,6 +104,7 @@ function runApplication()
 {
     openLogFile();
     connectToFTP();
+    sendEmail();
 }
 
 //at start of application. This opens the log file and puts the header info on it
@@ -148,6 +139,7 @@ function openLogFile()
         $logContents.="Process was started from CLI".PHP_EOL;
     }
     $dateTime = "Current time and date is: ".date("Y-m-d H:i:s");
+    appendEmailString("Process run on ".date("m-d-Y")."<br>");
     $logContents.= $dateTime.PHP_EOL;
     echo $dateTime.EOL();
     file_put_contents($logName, $logContents);
@@ -163,6 +155,12 @@ function appendLogFile($appendedString)
     $logContents .= $appendedString;
     file_put_contents($logName, $logContents.PHP_EOL);
     echo($appendedString.EOL());
+}
+
+function appendEmailString($appendedString)
+{
+    global $emailMid;
+    $emailMid.=$appendedString;
 }
 
 //function to connect to FTP server. Called by runApplication()
@@ -259,7 +257,7 @@ function download_begin($conn, $fileName)
         //call function to reconcile differences between client config and server files
         //it will be a procedure at first, but will be more interactive in the HTTP run state and CLI
         //instantiations.
-        reconcileDownload($conn, $fileName, $serverFileArray[1]);
+        @reconcileDownload($conn, $fileName, $serverFileArray[0]);
     }
     else if($fileName > $serverFileArray)
     {
@@ -334,9 +332,35 @@ function transferFiles($conn, $serverName)
 //goes, it will just download the files it doesn't detect in the download folder.
 function reconcileDownload($conn, $localName, $serverName)
 {
+
     appendLogFile("reconciling download...");
-    $lastSuccessfulDate = getLastSuccess();
-    appendLogFile("The last file set successfully downloaded ".$lastSuccessfulDate);
+    $lastSuccessfulFileName = getLastSuccess();
+    appendLogFile("serverName: ".$serverName." lastSuccessfulFileName: ".$lastSuccessfulFileName);
+    appendLogFile("The last file set successfully downloaded ".$lastSuccessfulFileName);
+    for($i = $lastSuccessfulFileName; $i <= $serverName; $i++)
+    {
+        $acfString = "WNCLN".$i.".ACF";
+        $ulhString = "WNCLN".$i.".ULH";
+        appendLogFile("Attempting to download". $acfString);
+        appendLogFile("Attempting to download". $ulhString);
+        if(ftp_get($conn, "download\\".$acfString, $acfString, FTP_ASCII))
+        {
+            appendLogFile($acfString." downloaded successfully");
+        }
+        else
+        {
+            appendLogFile($acfString." DOWNLOAD FAILED!");
+        }
+        if(ftp_get($conn, "download\\".$ulhString, $ulhString, FTP_ASCII))
+        {
+            appendLogFile($ulhString." downloaded successfully");
+        }
+        else
+        {
+            appendLogFile($ulhString." DOWNLOAD FAILED!");
+        }
+    }
+    writeConfigUpdate($serverName);
 }
 
 //writes the new determined server name (the name of the files just now downloaded)
@@ -353,13 +377,15 @@ function writeConfigUpdate($serverName)
     file_put_contents("LTIconfig.cfg", $fileContents);
     appendLogFile("Config file updated");
 
-
 }
 
 //simply returns the number of the filename that was last downloaded successfully.
 //This is part of the reconcileDownload function.
 function getLastSuccess()
 {
+    /*
+     * This idea was incredibly stupid.
+     *
     //iterate through log file to allow us to get the name of the last successful download.
     //the next section will go through the downloads folder itself (it'll be compared to this)
     global $configurationArray;
@@ -379,6 +405,56 @@ function getLastSuccess()
         }
     }
     return substr($logContents[$lastSuccessfulLogEntryPlace + 6], -6, -2);
+    */
 
+    /*
+     * This idea is hopefully less stupid.
+     */
+    $lastSuccess = 1040;
+    $directory = 'download/';
+    if(!is_dir($directory))
+    {
+        appendLogFile("directory doesn't exist");
+    }
+    else
+    {
+        $files = scandir($directory);
+        foreach($files as $file)
+        {
+            //This will be made into a validator
+            echo($file);
+        }
+    }
+    return 1050;
 }
 
+function sendEmail()
+{
+    //setting up email config.
+    //There is not much to commit here. It's about 90% server-side config/setup
+    //This is for testing
+    //$emailStr = "<div style='font-family: arial, verdana, sans-serif'>This is an email!";
+    //$emailStr.= date("Y-m-d H:i:s")."</div>";
+    $headers = 'From: candelariajr@appstate.edu' . "\r\n" .
+        'Reply-To: candelariajr@appstate.edu' . "\r\n" .
+        'MIME-Version: 1.0' . "\r\n".
+        'Content-Type: text/html; charset=ISO-8859-1' . "\r\n".
+        'X-Mailer: PHP/' . phpversion() .
+
+        $emailHead = "<div style = 'font-family: arial, verdana, sans-serif'>
+    <div style = 'font-size: 20px; text-shadow: 1px 1px 4px #000000; text-align: center; background-color: #00cbcc; color: white; padding: 1%;'>
+        LTI Automation Email: Version 0.6a
+    </div>
+    <div style = ''>
+        <br>";
+
+    global $emailMid;
+    /*
+    concat to test-
+
+    Process run on 12-08-2015<br>Latest files determined to be WNCLN1072.ACF and WNCLN1072.ULH<hr><br><b>WNCLN1072.ACF downloaded successfully<br>WNCLN1072.ULH downloaded successfully</b>";
+    */
+    $emailFoot = "</div></div>";
+
+    mail("candelariajr@appstate.edu", "LTI Automated Email", $emailHead.$emailMid.$emailFoot, $headers); //, benshirley.wncln@gmail.com
+}

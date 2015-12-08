@@ -1,529 +1,447 @@
 
 ----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 14:41:51
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 0
-Last filename is: 0
-Config filename should be: -1
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 14:43:01
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1070
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 14:52:05
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1070
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 14:52:49
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1070
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 15:05:19
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-25 15:06:31
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 11:18:53
-Attempting to connect to ftp.librarytech.com...
-Connected but unable to authenticate. Check user/pw config
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 12:02:19
-Attempting to connect to ftp.librarytech.com...
-Connected but unable to authenticate. Check user/pw config
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 16:15:30
-Attempting to connect to ftp.librarytech.com...
-Connected but unable to authenticate. Check user/pw config
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 16:17:08
-Attempting to connect to ftp.librarytech.com...
-Connected but unable to authenticate. Check user/pw config
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 16:17:28
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 16:17:56
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 16:28:34
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.2c.1
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 17:10:13
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-
-----------------------------------------------------------------------------------------------
 Log Entry Started for App Version 0.3.b
 Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:35:56
+Current time and date is: 2015-12-08 10:00:16
 Attempting to connect to ftp.librarytech.com...
 Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:37:41
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:37:56
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:43:33
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:44:27
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:45:46
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:46:12
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:46:49
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF has been downloaded successfully!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:55:24
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:56:59
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF failed to download!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 19:57:36
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF has been downloaded successfully!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 20:01:01
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF has been downloaded successfully!
-WNCLN1070.ULH has been downloaded successfully!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-27 20:01:50
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1070
-Last filename is: 1069
-Config filename should be: 1069
-Config filename is: 1069
-WNCLN1070.ACF has been downloaded successfully!
-WNCLN1070.ULH has been downloaded successfully!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 13:23:09
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:13:16
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:20:47
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:21:41
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:24:13
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:25:03
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:28:09
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:29:39
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:29:52
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:30:35
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:31:56
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:39:25
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:42:20
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:44:45
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:48:44
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:50:12
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-11-30 15:50:32
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
-Consider running process manually. User input will be gathered in the next version to help handle this programmatically!
-
-----------------------------------------------------------------------------------------------
-Log Entry Started for App Version 0.3.b
-Process was started from HTTP Request
-Current time and date is: 2015-12-01 15:11:57
-Attempting to connect to ftp.librarytech.com...
-Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1069
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1061
 reconciling download...
-Process was last run successfully on: 1
-
+serverName: 1071 lastSuccessfulFileName: ful!
+The last file set successfully downloaded ful!
 
 ----------------------------------------------------------------------------------------------
 Log Entry Started for App Version 0.3.b
 Process was started from HTTP Request
-Current time and date is: 2015-12-01 17:22:13
+Current time and date is: 2015-12-08 10:04:06
 Attempting to connect to ftp.librarytech.com...
 Connection Successful!
-Server filename is: 1071
-Last filename is: 1070
-Config filename should be: 1070
-Config filename is: 1070
-WNCLN1071.ACF has been downloaded successfully!
-WNCLN1071.ULH has been downloaded successfully!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1061
+reconciling download...
+directory doesn't exist
+serverName: 1071 lastSuccessfulFileName: 1069
+The last file set successfully downloaded 1069
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:04:58
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:05:37
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1050
+reconciling download...
+serverName: 1071 lastSuccessfulFileName: 1050
+The last file set successfully downloaded 1050
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:10:16
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1050
+reconciling download...
+serverName: 1071 lastSuccessfulFileName: 1050
+The last file set successfully downloaded 1050
+Attempting to downloadWNCLN1050.ACF
+Attempting to downloadWNCLN1050.ULH
+WNCLN1050.ACF downloaded successfully
+WNCLN1050.ULH downloaded successfully
+Attempting to downloadWNCLN1051.ACF
+Attempting to downloadWNCLN1051.ULH
+WNCLN1051.ACF downloaded successfully
+WNCLN1051.ULH downloaded successfully
+Attempting to downloadWNCLN1052.ACF
+Attempting to downloadWNCLN1052.ULH
+WNCLN1052.ACF downloaded successfully
+WNCLN1052.ULH downloaded successfully
+Attempting to downloadWNCLN1053.ACF
+Attempting to downloadWNCLN1053.ULH
+WNCLN1053.ACF downloaded successfully
+WNCLN1053.ULH downloaded successfully
+Attempting to downloadWNCLN1054.ACF
+Attempting to downloadWNCLN1054.ULH
+WNCLN1054.ACF downloaded successfully
+WNCLN1054.ULH downloaded successfully
+Attempting to downloadWNCLN1055.ACF
+Attempting to downloadWNCLN1055.ULH
+WNCLN1055.ACF downloaded successfully
+WNCLN1055.ULH downloaded successfully
+Attempting to downloadWNCLN1056.ACF
+Attempting to downloadWNCLN1056.ULH
+WNCLN1056.ACF downloaded successfully
+WNCLN1056.ULH downloaded successfully
+Attempting to downloadWNCLN1057.ACF
+Attempting to downloadWNCLN1057.ULH
+WNCLN1057.ACF downloaded successfully
+WNCLN1057.ULH downloaded successfully
+Attempting to downloadWNCLN1058.ACF
+Attempting to downloadWNCLN1058.ULH
+WNCLN1058.ACF downloaded successfully
+WNCLN1058.ULH downloaded successfully
+Attempting to downloadWNCLN1059.ACF
+Attempting to downloadWNCLN1059.ULH
+WNCLN1059.ACF downloaded successfully
+WNCLN1059.ULH downloaded successfully
+Attempting to downloadWNCLN1060.ACF
+Attempting to downloadWNCLN1060.ULH
+WNCLN1060.ACF DOWNLOAD FAILED!
+WNCLN1060.ULH DOWNLOAD FAILED!
+Attempting to downloadWNCLN1061.ACF
+Attempting to downloadWNCLN1061.ULH
+WNCLN1061.ACF downloaded successfully
+WNCLN1061.ULH downloaded successfully
+Attempting to downloadWNCLN1062.ACF
+Attempting to downloadWNCLN1062.ULH
+WNCLN1062.ACF downloaded successfully
+WNCLN1062.ULH downloaded successfully
+Attempting to downloadWNCLN1063.ACF
+Attempting to downloadWNCLN1063.ULH
+WNCLN1063.ACF downloaded successfully
+WNCLN1063.ULH downloaded successfully
+Attempting to downloadWNCLN1064.ACF
+Attempting to downloadWNCLN1064.ULH
+WNCLN1064.ACF downloaded successfully
+WNCLN1064.ULH downloaded successfully
+Attempting to downloadWNCLN1065.ACF
+Attempting to downloadWNCLN1065.ULH
+WNCLN1065.ACF downloaded successfully
+WNCLN1065.ULH downloaded successfully
+Attempting to downloadWNCLN1066.ACF
+Attempting to downloadWNCLN1066.ULH
+WNCLN1066.ACF downloaded successfully
+WNCLN1066.ULH downloaded successfully
+Attempting to downloadWNCLN1067.ACF
+Attempting to downloadWNCLN1067.ULH
+WNCLN1067.ACF DOWNLOAD FAILED!
+WNCLN1067.ULH DOWNLOAD FAILED!
+Attempting to downloadWNCLN1068.ACF
+Attempting to downloadWNCLN1068.ULH
+WNCLN1068.ACF downloaded successfully
+WNCLN1068.ULH downloaded successfully
+Attempting to downloadWNCLN1069.ACF
+Attempting to downloadWNCLN1069.ULH
+WNCLN1069.ACF downloaded successfully
+WNCLN1069.ULH downloaded successfully
+Attempting to downloadWNCLN1070.ACF
+Attempting to downloadWNCLN1070.ULH
+WNCLN1070.ACF downloaded successfully
+WNCLN1070.ULH downloaded successfully
+Attempting to downloadWNCLN1071.ACF
+Attempting to downloadWNCLN1071.ULH
+WNCLN1071.ACF downloaded successfully
+WNCLN1071.ULH downloaded successfully
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:20:15
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:20:37
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1050
+reconciling download...
+serverName: 1071 lastSuccessfulFileName: 1050
+The last file set successfully downloaded 1050
+Attempting to downloadWNCLN1050.ACF
+Attempting to downloadWNCLN1050.ULH
+WNCLN1050.ACF downloaded successfully
+WNCLN1050.ULH downloaded successfully
+Attempting to downloadWNCLN1051.ACF
+Attempting to downloadWNCLN1051.ULH
+WNCLN1051.ACF downloaded successfully
+WNCLN1051.ULH downloaded successfully
+Attempting to downloadWNCLN1052.ACF
+Attempting to downloadWNCLN1052.ULH
+WNCLN1052.ACF downloaded successfully
+WNCLN1052.ULH downloaded successfully
+Attempting to downloadWNCLN1053.ACF
+Attempting to downloadWNCLN1053.ULH
+WNCLN1053.ACF downloaded successfully
+WNCLN1053.ULH downloaded successfully
+Attempting to downloadWNCLN1054.ACF
+Attempting to downloadWNCLN1054.ULH
+WNCLN1054.ACF downloaded successfully
+WNCLN1054.ULH downloaded successfully
+Attempting to downloadWNCLN1055.ACF
+Attempting to downloadWNCLN1055.ULH
+WNCLN1055.ACF downloaded successfully
+WNCLN1055.ULH downloaded successfully
+Attempting to downloadWNCLN1056.ACF
+Attempting to downloadWNCLN1056.ULH
+WNCLN1056.ACF downloaded successfully
+WNCLN1056.ULH downloaded successfully
+Attempting to downloadWNCLN1057.ACF
+Attempting to downloadWNCLN1057.ULH
+WNCLN1057.ACF downloaded successfully
+WNCLN1057.ULH downloaded successfully
+Attempting to downloadWNCLN1058.ACF
+Attempting to downloadWNCLN1058.ULH
+WNCLN1058.ACF downloaded successfully
+WNCLN1058.ULH downloaded successfully
+Attempting to downloadWNCLN1059.ACF
+Attempting to downloadWNCLN1059.ULH
+WNCLN1059.ACF downloaded successfully
+WNCLN1059.ULH downloaded successfully
+Attempting to downloadWNCLN1060.ACF
+Attempting to downloadWNCLN1060.ULH
+WNCLN1060.ACF DOWNLOAD FAILED!
+WNCLN1060.ULH DOWNLOAD FAILED!
+Attempting to downloadWNCLN1061.ACF
+Attempting to downloadWNCLN1061.ULH
+WNCLN1061.ACF downloaded successfully
+WNCLN1061.ULH downloaded successfully
+Attempting to downloadWNCLN1062.ACF
+Attempting to downloadWNCLN1062.ULH
+WNCLN1062.ACF downloaded successfully
+WNCLN1062.ULH downloaded successfully
+Attempting to downloadWNCLN1063.ACF
+Attempting to downloadWNCLN1063.ULH
+WNCLN1063.ACF downloaded successfully
+WNCLN1063.ULH downloaded successfully
+Attempting to downloadWNCLN1064.ACF
+Attempting to downloadWNCLN1064.ULH
+WNCLN1064.ACF downloaded successfully
+WNCLN1064.ULH downloaded successfully
+Attempting to downloadWNCLN1065.ACF
+Attempting to downloadWNCLN1065.ULH
+WNCLN1065.ACF downloaded successfully
+WNCLN1065.ULH downloaded successfully
+Attempting to downloadWNCLN1066.ACF
+Attempting to downloadWNCLN1066.ULH
+WNCLN1066.ACF downloaded successfully
+WNCLN1066.ULH downloaded successfully
+Attempting to downloadWNCLN1067.ACF
+Attempting to downloadWNCLN1067.ULH
+WNCLN1067.ACF DOWNLOAD FAILED!
+WNCLN1067.ULH DOWNLOAD FAILED!
+Attempting to downloadWNCLN1068.ACF
+Attempting to downloadWNCLN1068.ULH
+WNCLN1068.ACF downloaded successfully
+WNCLN1068.ULH downloaded successfully
+Attempting to downloadWNCLN1069.ACF
+Attempting to downloadWNCLN1069.ULH
+WNCLN1069.ACF downloaded successfully
+WNCLN1069.ULH downloaded successfully
+Attempting to downloadWNCLN1070.ACF
+Attempting to downloadWNCLN1070.ULH
+WNCLN1070.ACF downloaded successfully
+WNCLN1070.ULH downloaded successfully
+Attempting to downloadWNCLN1071.ACF
+Attempting to downloadWNCLN1071.ULH
+WNCLN1071.ACF downloaded successfully
+WNCLN1071.ULH downloaded successfully
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:22:52
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:22:55
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:53:37
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:53:52
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:54:05
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:55:04
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 10:56:17
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 12:28:18
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 12:35:41
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 12:36:16
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 12:37:04
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
+Config file updated
+
+----------------------------------------------------------------------------------------------
+Log Entry Started for App Version 0.3.b
+Process was started from HTTP Request
+Current time and date is: 2015-12-08 17:24:44
+Attempting to connect to ftp.librarytech.com...
+Connection Successful!
+Server filename is: 1072
+Last filename is: 1071
+Config filename should be: 1071
+Config filename is: 1072
+WNCLN1072.ACF has been downloaded successfully!
+WNCLN1072.ULH has been downloaded successfully!
 Config file updated
